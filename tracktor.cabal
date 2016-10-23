@@ -1,0 +1,42 @@
+name:                tracktor
+version:             0.1.0.0
+synopsis:            Torrent open tracker
+-- description:
+license:             PublicDomain
+license-file:        LICENSE
+author:              panamiga
+maintainer:          el_@inbox.ru
+-- copyright:
+category:            Network
+build-type:          Simple
+cabal-version:       >=1.8
+
+executable tracktor
+   main-is:
+    Main.hs
+   other-modules:
+    UDPTracker.Action
+    UDPTracker.Config
+    UDPTracker.Data
+    UDPTracker.Event
+    UDPTracker.Handler
+    UDPTracker.Log
+    UDPTracker.Parser
+    UDPTracker.State
+  build-depends:
+      base ==4.9.*
+    , auto-update
+    , binary
+    , bytestring
+    , containers
+    , data-endian
+    , ixset
+    , hdaemonize
+    , hsyslog
+    , network
+    , optparse-applicative
+    , random
+    , text
+    , time
+    , yaml
+  ghc-options: -threaded

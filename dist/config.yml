@@ -1,0 +1,7 @@
+listenPort       : 6969
+announceInterval : 900
+peerAliveTimeout : 1800
+peerConnTimeout  : 120
+peerErrorsToBan  : 3
+peerBanTimeout   : 60
+goBackground     : True
